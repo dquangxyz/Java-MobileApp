@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_options_major">
+        <item>Not select</item>
+        <item>Software Engineering</item>
+        <item>Cyber Security</item>
+        <item>Data Science</item>
+        <item>Network Engineering</item>
+    </string-array>
+
+    <string-array name="spinner_options_campus">
+        <item>Not select</item>
+        <item>City</item>
+        <item>Bundoora</item>
+        <item>Online</item>
+    </string-array>
+
+    <string-array name="spinner_options_gender">
+        <item>Not select</item>
+        <item>Female</item>
+        <item>Male</item>
+        <item>Unspecified</item>
+        <item>Gender Diverse</item>
+    </string-array>
+
+    <string-array name="spinner_options_nationality">
+        <item>Not select</item>
+        <item>Australian</item>
+        <item>Chinese</item>
+        <item>Indian</item>
+        <item>American</item>
+        <item>Vietnamese</item>
+        <item>Egyptian</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="spinner_options_subjects">
+        <item>Not select</item>
+        <item>CSE3MAD</item>
+        <item>CSE3PSD</item>
+        <item>CSE4DBF</item>
+        <item>CSE4OOF</item>
+        <item>CSE4IFU</item>
+        <item>CSE4OO2</item>
+        <item>CSE4IP</item>
+        <item>CSE5ALG</item>
+        <item>CSE5PM</item>
+        <item>CSE5003</item>
+    </string-array>
+
+
+</resources>

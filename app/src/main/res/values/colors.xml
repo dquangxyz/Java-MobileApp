@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="pink_500">#f594b7</color>
+    <color name="pink_200">#ad7ffb</color>
+    <color name="grey_500">#92b2fd</color>
+    <color name="grey_200">#ccd0f6</color>
+    <color name="black">#434343</color>
+    <color name="white">#f9fafe</color>
+    <color name="whatsapp">#25D366</color>
+</resources>

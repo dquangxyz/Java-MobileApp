@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">uMatchapp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_contacts">Contacts</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="desc_match">Find Match</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="title_activity_tabbed">tabbed_activity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="match_btn">Find Match</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="user_name">%s</string>
+    <string name="user_matched_subject">%s</string>
+    <string name="signed_out">Status: Signed out</string>
+    <string name="signed_in_fmt">Signed in as %1$s</string>
+    <string name="view_profile_details">View Profile Details</string>
+    <string name="hide_profile_details">Hide Profile Details</string>
+</resources>

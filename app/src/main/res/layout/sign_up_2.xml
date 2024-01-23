@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/imageView4"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:srcCompat="@drawable/gradient_background" />-->
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView_fillProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Fill in your Profile Details"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <!--
+            android:background="@drawable/gradient_background"
+            -->
+
+            <LinearLayout
+                android:id="@+id/profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image_user"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/baseline_person_24"
+                    app:civ_border_color="@color/grey_200"
+                    app:civ_border_width="3dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/first_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+                <TextView
+                    android:id="@+id/first_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="First Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/first_name_edit"/>
+
+                <EditText
+                    android:id="@+id/first_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="What's you first name?"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:maxWidth="488dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/last_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/first_name">
+
+                <TextView
+                    android:id="@+id/last_name_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Last Name"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/Last_name_edit"/>
+
+                <EditText
+                    android:id="@+id/Last_name_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="What's you last name?"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:maxWidth="488dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/e_mail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/last_name">
+
+                <TextView
+                    android:id="@+id/e_mail_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="E-mail"
+                    android:labelFor="@+id/e_mail_edit"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/e_mail_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your E-mail"
+                    android:inputType="textPersonName"
+                    android:textSize="16sp"
+                    android:maxWidth="488dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/e_mail">
+
+                <TextView
+                    android:id="@+id/phone_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/phone_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Enter your phone"
+                    android:inputType="phone"
+                    android:textSize="16sp"
+                    android:maxWidth="488dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/major"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phone">
+
+                <TextView
+                    android:id="@+id/major_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Major"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_major"/>
+
+                <Spinner
+                    android:id="@+id/spinner_major"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:gravity="center_horizontal"
+                    android:hint="Choose your Major"
+                    android:contentDescription="Choose your Major"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/campus_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/major">
+
+                <TextView
+                    android:id="@+id/campus_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Campus"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_campus"/>
+
+                <Spinner
+                    android:id="@+id/spinner_campus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your campus"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/campus_location">
+
+                <TextView
+                    android:id="@+id/gender_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Gender"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_gender"/>
+
+
+                <Spinner
+                    android:id="@+id/spinner_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your gender"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nationality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender">
+
+                <TextView
+                    android:id="@+id/nationality_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Nationality"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_nationality"/>
+
+                <Spinner
+                    android:id="@+id/spinner_nationality"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your nationality"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/textView_choose_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:padding="20dp"
+                android:text="Choose your subject"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <LinearLayout
+                android:id="@+id/subject1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_choose_subject">
+
+                <TextView
+                    android:id="@+id/subject1_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subject 1"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_subject1"/>
+
+                <Spinner
+                    android:id="@+id/spinner_subject1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your First Subject"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subject2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subject1">
+
+                <TextView
+                    android:id="@+id/subject2_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subject 2"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_subject2"/>
+
+                <Spinner
+                    android:id="@+id/spinner_subject2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your Second Subject"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subject3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subject2">
+
+                <TextView
+                    android:id="@+id/subject3_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subject 3"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_subject3"/>
+
+                <Spinner
+                    android:id="@+id/spinner_subject3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your Third Subject"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subject4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/subject3">
+
+                <TextView
+                    android:id="@+id/subject4_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Subject 4"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:labelFor="@+id/spinner_subject4"/>
+
+                <Spinner
+                    android:id="@+id/spinner_subject4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="48dp"
+                    android:contentDescription="ُChoose your Forth Subject"
+                    android:popupBackground="@color/grey_200"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:spinnerMode="dialog"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Describe yourself as a study partner"
+
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView_addition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:paddingBottom="20dp"
+                android:text="(in 20-50 words)"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView_describe"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.9"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_describe"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+            <LinearLayout
+                android:id="@+id/edit_self_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView_addition">
+
+                <EditText
+                    android:id="@+id/user_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:hint="Describe yourself, mention your study style, team work, communication skills and your motivation"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:maxWidth="488dp"/>
+
+                <!--                <EditText-->
+                <!--                    android:id="@+id/editText"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:minHeight="100dp"-->
+                <!--                    android:padding="20dp"-->
+                <!--                    android:textSize="16sp"-->
+                <!--                    android:hint="Describe yourself, mention your study style, team work, communication skills and your motivation"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent"-->
+                <!--                    android:inputType="text"-->
+                <!--                    android:maxWidth="488dp"/>-->
+                <!--                    android:textColor="@color/black"-->
+                <!--                    android:background="@drawable/custom_edit_text"-->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/submit_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_self_description">
+
+                <Button
+                    android:id="@+id/finish_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Finish"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ConstraintLayout2" />
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

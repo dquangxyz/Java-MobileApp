@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient android:angle="45" android:startColor="@color/pink_200" android:endColor="@color/pink_500">
+
+            </gradient>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/baseline_connect_without_contact_24" android:top="15dp" android:bottom="15dp" android:right="15dp" android:left="15dp">
+
+    </item>
+</layer-list>
